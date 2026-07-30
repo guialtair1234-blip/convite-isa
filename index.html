@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<HEAD>
-    <META CHARSET="UTF-8">
-    <link rel="stylesheet" href="style.css">
-</HEAD>
+<head>
+  <meta charset="UTF-8">
+  <title>rolê.exe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="card">
-        <h1 id="titulo">o app sorteou uma missão para vocês dois hoje</h1>
-        <p id="texto"> está com vontade do que hoje?</p>
-        <div id="escolhas">
-            <button onclick="escolherQuente()">algo quentinho</button>
-            <button onclick="escolherPasseio()">um passeio no parque?</button>
-            <button onclick="escolherSurpresa()">topo qualquer surpresa</button>
+  <button id="btnMutar" onclick="alternarMudo()">🔊</button>
+  <audio id="musicaFundo" loop>
+    <source src="sons/fundo.mp3" type="audio/mpeg">
+  </audio>
+
+<div class="card">
+
+    <div id="telaInicial">
+      <h1 id="titulo">oii isaa!</h1>
+      <div id="introTexto">
+      <p>você me concederia o privilégio de sair com você novamente?kk</p>
+      <p>dessa vez você vai me ajudar a escolher!</p>
+    </div>
+
+  <button id="btnContinuar" onclick="mostrarDisponibilidade()">continuar →</button>
+  
+</div>
+
+    <div id="disponibilidade" style="display:none;">
+        <p>quando você está livre?</p>
+        <label for="dataEscolhida">dia:</label>
+        <input type="date" id="dataEscolhida">
+
+        <p>período:</p>
+        <div id="periodos">
+            <button class="periodo-btn" data-periodo="manha" onclick="selecionarPeriodo('manha')"> manhã</button>
+            <button class="periodo-btn" data-periodo="tarde" onclick="selecionarPeriodo('tarde')"> tarde</button>
+            <button class="periodo-btn" data-periodo="noite" onclick="selecionarPeriodo('noite')"> noite</button>
         </div>
 
-        <button id="btnContinuar" onclick="revelarConvite()" style="display:none;">continuar -></button>
-        
-        <div id="confirmacao" style="display:none; margin-top:20px;">
-            <p> voce confirma essas informações para o date?</p>
-            <button onclick="confirmar()"> sim!!</button>
-            <button id="btnNao" onmouseover="fugir()"> nao</button>
-        </div>
+        <button onclick="confirmarHorario()">confirmar opção →</button>
     </div>
-        <script src="script.js"></script>
+
+    <div id="pergunta1" style="display:none;">
+        <p id="p1Texto"></p>
+        <div id="p1Opcoes"></div>
+    </div>
+
+    <div id="pergunta2" style="display:none;">
+        <p id="p2Texto"></p>
+        <div id="p2Opcoes"></div>
+    </div>
+
+    <div id="confirmacao" style="display:none; margin-top:20px;">
+        <p id="texto">fecha esse rolê?</p>
+        <button onclick="confirmar()">sim!! 🎉</button>
+        <button id="btnNao" onmouseover="fugir()">não</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -44,3 +44,15 @@ button:hover {
 #btnNao:hover {
   background-color: #b5b5b5;
 }
+
+.periodo-btn.selecionado {
+  background-color: #ff4f92;
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px rgba(255,110,168,0.4);
+}
+
+.p1-btn.selecionado, .p2-btn.selecionado {
+  background-color: #ff4f92;
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px rgba(255,110,168,0.4);
+}
