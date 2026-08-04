@@ -24,25 +24,25 @@ somYay.volume = 0.1;
 const perguntas = {
   noite: {
   pergunta1: {
-    texto: "jantar ou fazer algum lazer?",
+    texto: "você prefere sair para jantar ou sair para um lazer?",
     opcoes: [
       { valor: "jantar", label: "🍽️ jantar" },
       { valor: "lazer", label: "🎬 lazer" }
     ]
   },
   pergunta2PorP1: {
-    jantar: { texto: "topa algo novo, ou quer algo confortante?", opcoes: [
-      { valor: "novo", label: "✨ algo novo" }, { valor: "confortante", label: "🛋️ confortante" }
+    jantar: { texto: "quer conhecer uma culinária nova ou quer visitar um restaurante bemmm confortante?", opcoes: [
+      { valor: "novo", label: "✨ algo novo" }, { valor: "confortante", label: "❤️ confortante" }
     ]},
-    lazer: { texto: "assistir um filminho ou sair pra comer algo gostoso?", opcoes: [
-      { valor: "cinema", label: "🎬 filminho" }, { valor: "comer", label: "🍧 comer algo gostoso" }
+    lazer: { texto: "assistir um filminho ou sair pra comer um docinho?", opcoes: [
+      { valor: "cinema", label: "🎬 filminho" }, { valor: "comer", label: "🍧 docinho" }
     ]}
   },
   resultados: {
-    "jantar-confortante": { nome: "Saiko Lámen", emoji: "🍜", descricao: "sei que você curte um udon, e lá é exatamente a vibe 😌", link: "https://share.google/Vet4N4h5Y8C3TYaUx" },
-    "jantar-novo": { nome: "Salsa Nossa Casa", emoji: "🇵🇪", descricao: "bora experimentar comida peruana, nunca fomos" },
-    "lazer-cinema": { nome: "Cinema", emoji: "🎬", descricao: "um filminho e pipoca, clássico que funciona" },
-    "lazer-comer": { nome: "Georgina", emoji: "🍧", descricao: "geladinho pra fugir do calor" }
+    "jantar-confortante": { nome: "Saiko Lámen", emoji: "🍜", descricao: "perfeito para comermos um udon quentinho que eu sei que você gosta ksks", link: "https://www.instagram.com/saikolamen/"},
+    "jantar-novo": { nome: "Pirajá", emoji: "🏖️", descricao: "que tal conhecermos um pouco da gastronomia do Rio de Janeiro?", link:"https://www.instagram.com/barpiraja/"},
+    "lazer-cinema": { nome: "Cinema", emoji: "🎬", descricao: "clássico ne?? tem vários filminhos massa em cartaz! ksks", link:"https://www.kinoplex.com.br/cinema/kinoplex-dom-pedro/15?gad_source=1&gad_campaignid=21354544694&gbraid=0AAAAADeXgnXmCOu9eRVOMkpK29DaHqZNn&gclid=Cj0KCQjwm8bTBhDWARIsAC9Hi8m-7eP-E_3QpfclCLRftnQiioruoKgc2OuUiqRQgpSFDtyrQy4VM1QaAqRaEALw_wcB"},
+    "lazer-comer": { nome: "Georgina", emoji: "🍧", descricao: "para tomarmos um sorvetinho ou comer algum docinho bem quentinho", link:"https://www.instagram.com/georginagelato/"}
   }
 },
 
@@ -63,34 +63,34 @@ const perguntas = {
       ]}
     },
     resultados: {
-      "cafe-docinho": { nome: "casa cookie", emoji: "🍪", descricao: "excelente para comermos o bolo de maracujá ou um cookie quentinho" },
-      "cafe-brunch": { nome: "Vila Grão", emoji: "🥐", descricao: "brunch tranquilo, sem pressa" },
-      "passear-parque": { nome: "Parque do Taquaral", emoji: "🌳", descricao: "uma volta ao ar livre, sem compromisso" },
-      "passear-turistico": { nome: "Bosque dos Jequitibás", emoji: "🏛️", descricao: "um passeio diferente do de sempre" }
+      "cafe-docinho": { nome: "Casa Cookie", emoji: "🍪", descricao: "excelente para comermos o bolo de maracujá ou um cookie quentinho", link:"https://www.instagram.com/casacookieecafe/"},
+      "cafe-brunch": { nome: "Vila Grão", emoji: "🥐", descricao: "para tomarmos um café bem gostoso na frente da lagoa do taquaral", link:"https://www.instagram.com/viladograo_/"},
+      "passear-parque": { nome: "Lagoa do Taquaral", emoji: "🌳", descricao: "perfeito para conhecer um dos lugares mais emblemáticos de campinas", link:"https://conheca.campinas.sp.gov.br/pois/55"},
+      "passear-turistico": { nome: "Bosque dos Jequitibás", emoji: "🏞️", descricao: "para desligar um pouco e relaxar", link:"https://conheca.campinas.sp.gov.br/pois/967"}
     }
   },
 
   tarde: {
     pergunta1: {
-      texto: "algo ao ar livre ou coberto?",
+      texto: "você prefere algo ao ar livre ou alguma atividade indoor?",
       opcoes: [
         { valor: "arlivre", label: "🌤️ ao ar livre" },
-        { valor: "coberto", label: "🏠 coberto" }
+        { valor: "coberto", label: "🏠 indoor" }
       ]
     },
     pergunta2PorP1: {
-      arlivre: { texto: "gostaria de conversar ou praticar algum esporte?", opcoes: [
+      arlivre: { texto: "gostaria de ficar conversando tranquilinho ou prefere sair para praticar algum esporte?", opcoes: [
         { valor: "conversar", label: "💬 conversar" }, { valor: "esporte", label: "🎾 esporte" }
       ]},
-      coberto: { texto: "atividade manual ou comer alguma coisinha gostosa?", opcoes: [
-        { valor: "manual", label: "🎨 atividade manual" }, { valor: "comer", label: "🍰 comer algo gostoso" }
+      coberto: { texto: "prefere fazer alguma atividade manual ou passear em um ponto turístico?", opcoes: [
+        { valor: "manual", label: "🎨 atividade manual" }, { valor: "comer", label: "🏛️ ponto turístico" }
       ]}
     },
     resultados: {
-      "arlivre-conversar": { nome: "Piquenique", emoji: "🧺", descricao: "um piquenique tranquilo, só pra conversar" },
-      "arlivre-esporte": { nome: "Tênis no Taquaral", emoji: "🎾", descricao: "bora trocar uma bolinha lá no Taquaral" },
-      "coberto-manual": { nome: "Casa Criativa", emoji: "🎨", descricao: "atividade manual, mãos na massa" },
-      "coberto-comer": { nome: "Mercado de Campinas", emoji: "🏛️", descricao: "um passeio diferente, cheio de coisa boa pra ver e comer" }
+      "arlivre-conversar": { nome: "Piquenique", emoji: "🧺", descricao: "um piquenique bemmm tranquilo para comermos algo gostosinho e relaxar",link:"https://www.tripadvisor.com.br/Attractions-g303605-Activities-c57-Campinas_State_of_Sao_Paulo.html"},
+      "arlivre-esporte": { nome: "Tênis no Taquaral", emoji: "🎾", descricao: "kkkkk esse daqui é para você me humilhar no tênis e render várias risadas", link:"https://conheca.campinas.sp.gov.br/pois/55"},
+      "coberto-manual": { nome: " (entre) Casa Criativa", emoji: "🎨", descricao: "para termos um artesanato em casa que vai nos recordar desse dia", link:"https://www.instagram.com/entrecasacriativa/"},
+      "coberto-comer": { nome: "Museu da Imagem e do Som de Campinas", emoji: "🏛️", descricao: "um passeio diferente e bem performático fala sério kkkk", link:"https://www.instagram.com/mis.campinas/"}
     }
   }
 };
@@ -98,7 +98,7 @@ const perguntas = {
 function mostrarDisponibilidade() {
   document.getElementById("btnContinuar").style.display = "none";
   document.getElementById("introTexto").style.display = "none";
-  document.getElementById("titulo").style.display = "none"; // ← nova linha
+  document.getElementById("titulo").style.display = "none"; 
 
   mostrarTela("disponibilidade");
   atualizarProgresso(20);
@@ -106,6 +106,7 @@ function mostrarDisponibilidade() {
   reagirMascote("🤔");
   somYay.play();
   musicaFundo.play();
+  
 }
 
 function selecionarPeriodo(periodo) {
@@ -113,7 +114,7 @@ function selecionarPeriodo(periodo) {
   document.querySelectorAll(".periodo-btn").forEach(b => b.classList.remove("selecionado"));
   document.querySelector(`[data-periodo="${periodo}"]`).classList.add("selecionado");
 
-  pararSomsPeriodo(); // ← nova linha, para qualquer som de período tocando antes de começar outro
+  pararSomsPeriodo();
 
   if (periodo === "manha") somManha.play();
   else if (periodo === "tarde") somTarde.play();
@@ -207,7 +208,7 @@ function revelarLugar() {
 
   lugarEscolhido = opcao.nome;
   document.getElementById("titulo").style.display = "block";
-  document.getElementById("titulo").textContent = "🎉 eba! nosso escolha é...";
+  document.getElementById("titulo").textContent = "🎉 eba! nossa escolha é...";
 
   document.getElementById("texto").innerHTML =
     `${opcao.emoji} <span class="nomeLugar">${opcao.nome}</span> — ${opcao.descricao}`;
@@ -233,7 +234,7 @@ function revelarLugar() {
 
 function gostei() {
   somGostei.play();
-  document.getElementById("titulo").textContent = "Eu amei o nosso plano, isa! 💚";
+  document.getElementById("titulo").textContent = "eu amei o nosso plano, isa! 💚";
   esconderTela("resultado");
   mostrarTela("confirmacaoFinal");
   atualizarProgresso(100);
@@ -243,21 +244,6 @@ function recomecar() {
   location.reload();
 }
 
-
-function confirmar() {
-  somConfirma.play();
-
-  const mensagem = `Fechado! Bora no(a) ${lugarEscolhido}, dia ${dataEscolhida}! 🎉`;
-  const link = `https://wa.me/${MEU_WHATSAPP}?text=${encodeURIComponent(mensagem)}`;
-  window.open(link, "_blank");
-
-  document.getElementById("titulo").textContent = "Nos vemos em breve!";
-  document.getElementById("texto").textContent = "Combinado! Abrindo o Whatsapp... 🎉";
-  document.getElementById("confirmacaoFinal").style.display = "none";
-  document.getElementById("figurinhaFinal").style.display = "block";
-
-  reagirMascote("🥰");
-}
 
 function fugir() {
   const botao = document.getElementById("btnNao");
@@ -270,12 +256,6 @@ function fugir() {
   document.body.classList.add("tremendo");
   setTimeout(() => document.body.classList.remove("tremendo"), 400);
   reagirMascote("😭");
-}
-
-function alternarMudo() {
-  mudo = !mudo; // inverte o valor: true vira false, false vira true
-  musicaFundo.muted = mudo;
-  document.getElementById("btnMutar").textContent = mudo ? "🔇" : "🔊";
 }
 
 function alternarMudo() {
@@ -356,4 +336,19 @@ function periodoParaTexto(periodo) {
     noite: "à noite"
   };
   return textos[periodo];
+}
+
+function confirmar() {
+  somConfirma.play();
+
+  const mensagem = `oii gui! nosso plano será ir no(a) ${lugarEscolhido}, dia ${dataEscolhida}! 👀`;
+  const link = `https://wa.me/${MEU_WHATSAPP}?text=${encodeURIComponent(mensagem)}`;
+  window.open(link, "_blank");
+
+  document.getElementById("titulo").textContent = "nos vemos em breve!";
+  document.getElementById("texto").textContent = "Combinado! Abrindo o Whatsapp... 🎉";
+  document.getElementById("confirmacaoFinal").style.display = "none";
+  document.getElementById("figurinhaFinal").style.display = "block";
+
+  reagirMascote("🥰");
 }
