@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rolê.exe</title>
+  <title>convite.exe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div id="mascote">😊</div>
+
+  <div id="barraProgresso">
+    <div id="barraProgressoPreenchida"></div>
+  </div>
+
   <button id="btnMutar" onclick="alternarMudo()">🔊</button>
   <audio id="musicaFundo" loop>
     <source src="sons/fundo.mp3" type="audio/mpeg">
@@ -18,20 +24,20 @@
     <div id="telaInicial">
       <h1 id="titulo">oii isaa!</h1>
       <div id="introTexto">
-      <p>você me concederia o privilégio de sair com você novamente?kk</p>
+      <p>você me concederia o privilégio de sair com você novamente?👀</p>
       <p>dessa vez você vai me ajudar a escolher!</p>
     </div>
 
-  <button id="btnContinuar" onclick="mostrarDisponibilidade()">continuar →</button>
+  <button id="btnContinuar" onclick="mostrarDisponibilidade()">aceito 🤠</button>
   
 </div>
 
     <div id="disponibilidade" style="display:none;">
-        <p>quando você está livre?</p>
+        <p>quando é o seu melhor dia?</p>
         <label for="dataEscolhida">dia:</label>
         <input type="date" id="dataEscolhida">
 
-        <p>período:</p>
+        <p>qual período você prefere? <span style="opacity:0.7; font-size:13px;"></span></p>
         <div id="periodos">
             <button class="periodo-btn" data-periodo="manha" onclick="selecionarPeriodo('manha')"> manhã</button>
             <button class="periodo-btn" data-periodo="tarde" onclick="selecionarPeriodo('tarde')"> tarde</button>
@@ -51,11 +57,29 @@
         <div id="p2Opcoes"></div>
     </div>
 
-    <div id="confirmacao" style="display:none; margin-top:20px;">
-        <p id="texto">fecha esse rolê?</p>
-        <button onclick="confirmar()">sim!! 🎉</button>
-        <button id="btnNao" onmouseover="fugir()">não</button>
+    <div id="calculando" style="display:none;">
+      <div class="spinner"></div>
+      <p>calculando de acordo com as suas preferências...</p>
     </div>
+
+    <div id="resultado" style="display:none;">
+      <p id="texto"></p>
+      <p id="dataTexto"></p>
+      <div id="mapaPreview"></div>
+      <a id="linkLugar" href="#" target="_blank" rel="noopener">📍 abrir no mapa</a>
+      <button onclick="gostei()">gostei desse plano! 💚</button>
+      <button onclick="recomecar()">quero outro plano 🔄</button>
+    </div>
+
+    <div id="confirmacaoFinal" style="display:none; margin-top:20px;">
+      <img id="figurinha" src="imagens/figurinha.png" alt="figurinha">
+      <p>posso confirmar nosso date?</p>
+      <button id="btnSim" onclick="confirmar()">sim!! 🎉</button>
+      <button id="btnNao" onmouseover="fugir()">não</button>
+    </div>
+
+    <img id="figurinhaFinal" src="imagens/figurinha2.png" alt="figurinha final" style="display:none;">
+
   </div>
 
   <script src="script.js"></script>
