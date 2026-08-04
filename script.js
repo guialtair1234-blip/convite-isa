@@ -19,7 +19,6 @@ const somGostei = new Audio("sons/gostei.mp3");
 const somResultado = new Audio("sons/resultado.mp3");
 
 musicaFundo.volume = 0.1;
-somYay.volume = 0.1;
 
 const perguntas = {
   noite: {
@@ -234,7 +233,7 @@ function revelarLugar() {
 
 function gostei() {
   somGostei.play();
-  document.getElementById("titulo").textContent = "eu amei o nosso plano, isa! 💚";
+  document.getElementById("titulo").textContent = "eu amei o nosso plano, isa! 💛";
   esconderTela("resultado");
   mostrarTela("confirmacaoFinal");
   atualizarProgresso(100);
@@ -290,7 +289,7 @@ function esconderTela(id) {
 }
 
 function dispararConfete(x, y) {
-  const emojis = ["🎉", "✨", "💚", "🍜", "🎊"];
+  const emojis = ["🎉", "✨", "💜", "🍜", "🎊"];
 
   for (let i = 0; i < 10; i++) {
     const particula = document.createElement("span");
@@ -341,12 +340,14 @@ function periodoParaTexto(periodo) {
 function confirmar() {
   somConfirma.play();
 
-  const mensagem = `oii gui! nosso plano será ir no(a) ${lugarEscolhido}, dia ${dataEscolhida}! 👀`;
+  const dataFormatada = formatarData(dataEscolhida);
+  const periodoTexto = periodoParaTexto(periodoEscolhido);
+  const mensagem = `oiii gui! nosso plano será ${lugarEscolhido}, dia ${dataFormatada}, ${periodoTexto}! 👀`;
   const link = `https://wa.me/${MEU_WHATSAPP}?text=${encodeURIComponent(mensagem)}`;
   window.open(link, "_blank");
 
-  document.getElementById("titulo").textContent = "nos vemos em breve!";
-  document.getElementById("texto").textContent = "Combinado! Abrindo o Whatsapp... 🎉";
+  document.getElementById("titulo").textContent = "nos vemos em breve!💜";
+  document.getElementById("texto").textContent = "combinado! abrindo o Whatsapp... 🎉";
   document.getElementById("confirmacaoFinal").style.display = "none";
   document.getElementById("figurinhaFinal").style.display = "block";
 
